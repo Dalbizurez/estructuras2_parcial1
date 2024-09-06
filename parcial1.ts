@@ -1,5 +1,9 @@
 import { Hashtable } from "./hashtable";
 
+/* Clase HashProducto
+     Hereda de la clase Hashtable, permitiendo cambiar la 
+     implementacion del metodo toString y poder acceder a
+     los metodos de la clase Producto*/
 class HashProducto extends Hashtable<Producto>{
 
     toString(): string {
@@ -16,7 +20,10 @@ class HashProducto extends Hashtable<Producto>{
         return txt;
     }
 }
-
+/**
+ * Clase Producto
+ * Clase que representa productos de una farmacia
+ */
 class Producto{
     private codigo:number;
     private nombre:string;

@@ -1,3 +1,8 @@
+/*
+Clase Linked_Node
+    Nodos enlazados para el manejo de colisiones en la tabla
+    Hash
+ */
 class Linked_Node<T> {
     private data: T;
     private next!:Linked_Node<T>;
@@ -23,6 +28,11 @@ class Linked_Node<T> {
 
 }
 
+/*
+Clase Hashtable
+    Implementacion de una tabla hash, que utiliza una lista
+    enlazada para el manejo de colisiones
+*/
 export class Hashtable<T> {
     private size: number;
     protected data: Linked_Node<T>[];
