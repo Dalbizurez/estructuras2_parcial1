@@ -63,7 +63,7 @@ class Producto{
     }
 
     toString(){
-        return "\n\tCodigo: 00" + this.codigo +"\n\tNombre: " + this.nombre + "\n\tPrecio Costo: " + this.costo + "\n\tPrecio Venta: " + this.venta
+        return "\n\tCodigo: P00" + this.codigo +"\n\tNombre: " + this.nombre + "\n\tPrecio Costo: " + this.costo + "\n\tPrecio Venta: " + this.venta
     }
 
     valueOf(){
