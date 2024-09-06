@@ -3,7 +3,8 @@ import { Hashtable } from "./hashtable";
 /* Clase HashProducto
      Hereda de la clase Hashtable, permitiendo cambiar la 
      implementacion del metodo toString y poder acceder a
-     los metodos de la clase Producto*/
+     los metodos de la clase Producto
+*/
 class HashProducto extends Hashtable<Producto>{
 
     toString(): string {
@@ -23,6 +24,8 @@ class HashProducto extends Hashtable<Producto>{
 /**
  * Clase Producto
  * Clase que representa productos de una farmacia
+ * Uilizando las funciones valueOf y toString para su
+ * representacion
  */
 class Producto{
     private codigo:number;
