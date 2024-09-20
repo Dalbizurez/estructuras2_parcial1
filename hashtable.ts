@@ -59,16 +59,14 @@ export class Hashtable<T> {
         }
     }
 
-    public search(data: number|string): T|string{
+    public search(data: number): T|string{
         let index: number = this.hash(data);
         let node = this.data[index];
-        if (typeof(data) == "string"){
-            data = parseInt(data.slice(1))
-        }
         while (node){
             if (node.getData() == data){
-                return node.getData()
+                return node.getData();
             }
+            node = node.getNext();
         }
         return "No registrado"
     }

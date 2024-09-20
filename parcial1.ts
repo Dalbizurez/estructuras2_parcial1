@@ -7,6 +7,13 @@ import { Hashtable } from "./hashtable";
 */
 class HashProducto extends Hashtable<Producto>{
 
+    public search(data: number | string): string | Producto {
+        if (typeof(data) == "string"){
+            data = parseInt(data.slice(1));
+        }
+        return super.search(data)
+    }
+
     toString(): string {
         let txt:string = "";
         for (let i = 0; i<this.data.length; i++){
@@ -88,6 +95,11 @@ hash.insert(p4);
 hash.insert(p5);
 hash.insert(p15);
 
-console.log(hash.search("P001"))
-console.log(hash.search("P0016"))
 console.log(hash.toString());
+console.log(hash.search("P001"))
+console.log(hash.search("P016"))
+console.log(hash.search("P004"))
+console.log(hash.search("P003"))
+console.log(hash.search("P0015"))
+console.log(hash.search("P005"))
+console.log(hash.search("P025"))
